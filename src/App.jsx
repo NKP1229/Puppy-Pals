@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css';
+import './newStyles.css';
 import {puppyList} from './data.js';
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
   const featuredPup = puppies.find((pup)=> pup.id === featPupId);
   console.log(featuredPup);
   return (
-    <div className="App">
-      <p>
+      <div className="App">
+      <p className="NameTitle">
       {featPupId && (
         <div>
           <h2>{featuredPup.name}</h2>
